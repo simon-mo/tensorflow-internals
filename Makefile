@@ -6,7 +6,7 @@ prepare:
 	mkdir -p output
 
 pdf: $(latexfile).tex
-	xelatex --output-directory=output $(latexfile).tex
+	xelatex -interaction nonstopmode  --output-directory=output $(latexfile).tex
 
 clean:
 	rm -rf output

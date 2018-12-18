@@ -6,50 +6,53 @@
 %% \CJKsetecglue{\hskip 0.15em plus 0.05em minus 0.05em}
 %% slanfont: 允许斜体
 %% boldfont: 允许粗体
-%% CJKnormalspaces: 仅忽略汉字之间的空白,但保留中英文之间的空白。 
+%% CJKnormalspaces: 仅忽略汉字之间的空白,但保留中英文之间的空白。
 %% CJKchecksingle: 避免单个汉字单独占一行。
-\usepackage[slantfont, boldfont]{xeCJK} 
+\usepackage[slantfont, boldfont]{xeCJK}
 % \usepackage{ctex}
 
 %% 针对中文进行断行
-\XeTeXlinebreaklocale "zh"             
+\XeTeXlinebreaklocale "zh"
 
 %% 给予TeX断行一定自由度
 \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt
 
-%%%% xeCJK设置结束                                       
+%%%% xeCJK设置结束
 %%%%%%%%------------------------------------------------------------------------
 
 %%%%%%%%------------------------------------------------------------------------
 %%%% xeCJK字体设置
 
 %% 设置中文标点样式，支持quanjiao、banjiao、kaiming等多种方式
-\punctstyle{quanjiao}                                        
-                                                     
+\punctstyle{quanjiao}
+
 %% 设置缺省中文字体
-\setCJKmainfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Song Std}   %  FZBaoSongZ04
+\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STHeiti}   %  FZBaoSongZ04
+%\setCJKmainfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STHeiti}   %  FZBaoSongZ04
+
 %% 设置中文无衬线字体
-\setCJKsansfont[BoldFont={Adobe Heiti Std}, ItalicFont={Adobe Kaiti Std}]{Adobe Kaiti Std}  
+\setCJKsansfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STHeiti}
+%\setCJKsansfont[BoldFont={STHeiti}, ItalicFont={STHeiti}]{STHeiti}
 %% 设置等宽字体
-\setCJKmonofont{Adobe Heiti Std}                            
-%\setCJKmonofont{Monaco}                            
+\setCJKmonofont{STHeiti}
+%\setCJKmonofont{Monaco}
 
 %% 英文衬线字体
-\setmainfont{Lucida Bright}                                  
+\setmainfont{Lucida Bright}
 %% 英文等宽字体
 %\setmonofont{Courier}
-\setmonofont{Monaco}                             
-%\setmonofont{Consolas}                              
+\setmonofont{Monaco}
+%\setmonofont{Consolas}
 %% 英文无衬线字体
-\setsansfont{Optima}                                   
+\setsansfont{Optima}
 
 %% 定义新字体
-\setCJKfamilyfont{song}{Adobe Song Std}                     
-\setCJKfamilyfont{kai}{Adobe Kaiti Std}
-\setCJKfamilyfont{hei}{Adobe Heiti Std}
-\setCJKfamilyfont{fangsong}{Adobe Song Std}
+\setCJKfamilyfont{song}{STHeiti}
+\setCJKfamilyfont{kai}{STHeiti}
+\setCJKfamilyfont{hei}{STHeiti}
+\setCJKfamilyfont{fangsong}{STHeiti}
 \setCJKfamilyfont{lisu}{LiShu}
-\setCJKfamilyfont{youyuan}{Adobe Kaiti Std}
+\setCJKfamilyfont{youyuan}{STHeiti}
 
 %%自定义英文字体
 \newfontfamily\couriernew{Lucida Grande}
@@ -61,17 +64,17 @@
 \renewcommand{\emph}[1]{{\hei #1}}
 
 %% 自定义宋体
-\newcommand{\song}{\CJKfamily{song}}                       
+\newcommand{\song}{\CJKfamily{song}}
 %% 自定义楷体
-\newcommand{\kai}{\CJKfamily{kai}}                         
+\newcommand{\kai}{\CJKfamily{kai}}
 %% 自定义黑体
-\newcommand{\hei}{\CJKfamily{hei}}                         
+\newcommand{\hei}{\CJKfamily{hei}}
 %% 自定义仿宋体
-\newcommand{\fangsong}{\CJKfamily{fangsong}}               
+\newcommand{\fangsong}{\CJKfamily{fangsong}}
 %% 自定义隶书
-\newcommand{\lisu}{\CJKfamily{lisu}}                       
+\newcommand{\lisu}{\CJKfamily{lisu}}
 %% 自定义幼圆
-\newcommand{\youyuan}{\CJKfamily{youyuan}}                 
+\newcommand{\youyuan}{\CJKfamily{youyuan}}
 
 %%%% xeCJK字体设置结束
 %%%%%%%%------------------------------------------------------------------------
@@ -81,10 +84,10 @@
 
 %% 数学公式定理的重定义
 
-\newtheorem{example}{例}[section]                                   
+\newtheorem{example}{例}[section]
 \newtheorem{algorithm}{算法}
 %% 按section编号
-\newtheorem{theorem}{定理}[section]                         
+\newtheorem{theorem}{定理}[section]
 \newtheorem{definition}{定义}
 \newtheorem{axiom}{公理}
 \newtheorem{property}{性质}
@@ -116,7 +119,7 @@
 \renewcommand{\appendixname}{附录}
 \renewcommand{\appendixpagename}{附录}
 \renewcommand{\appendixtocname}{附录}
-%\renewcommand\refname{参考文献} 
+%\renewcommand\refname{参考文献}
 
 %%设置内容环境
 \newenvironment{content}{%

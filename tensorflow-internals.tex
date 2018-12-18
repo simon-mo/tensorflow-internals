@@ -3,24 +3,29 @@
 % it under the terms of the GNU General Public License as published by
 % the Free Software Foundation, either version 3 of the License, or
 % (at your option) any later version.
-% 
+%
 % This program is distributed in the hope that it will be useful,
 % but WITHOUT ANY WARRANTY; without even the implied warranty of
 % MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 % GNU General Public License for more details.
-% 
+%
 % You should have received a copy of the GNU General Public License
 % along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 %%%%%%%%------------------------------------------------------------------------
-%%%% 导言区 
+%%%% 导言区
 %% 文档类型为article
-\documentclass[a4paper, 10pt]{book}
+%\documentclass[a4paper, 10pt]{book}
+\documentclass[12pt]{book}
+%\documentclass[DIV=calc,paper=9cm:12cm,pagesize]{scrartcl}
+%\areaset{8cm}{11cm}
 %1m = 39.4 inch
 %大18开 （18.5cm * 23cm)
 %\usepackage[left=3.25cm, right=3.25cm, top=2.3cm,bottom=1.4cm]{geometry}
 \usepackage{geometry}
-\geometry{left=3.75cm,right=3.25cm,top=3cm,bottom=2.5cm}
+%\geometry{left=3.75cm,right=3.25cm,top=3cm,bottom=2.5cm}
+%\geometry{left=1cm,right=1cm,top=1cm,bottom=1cm}
+\geometry{papersize={108mm,144mm},margin=2mm}
 
 %% en_preamble包含基本的宏包配置
 \input{style/en_preamble}
@@ -41,7 +46,6 @@
 
 % \backgroundsetup{contents={样章}}
 % \backgroundsetup{contents={\includegraphics[width=0.2\textwidth]{figures/cock.jpg}}}
-
 \newcommand{\myclearpage}{\clearpage{\pagestyle{empty}\cleardoublepage}}
 \newcommand{\mydedicate}{\clearpage{\pagestyle{empty}\cleardedicatepage}}
 
